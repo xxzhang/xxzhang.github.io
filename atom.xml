@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Remember the old days]]></title>
+  <subtitle><![CDATA[Keep recording]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2015-09-02T06:22:53.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name><![CDATA[zhangxiaoxu]]></name>
+    <email><![CDATA[zhangxiaoxu1218@sina.com]]></email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[A fresh start]]></title>
+    <link href="http://yoursite.com/2015/09/02/start/"/>
+    <id>http://yoursite.com/2015/09/02/start/</id>
+    <published>2015-09-02T06:22:53.000Z</published>
+    <updated>2015-09-02T06:22:53.000Z</updated>
+    <content type="html"><![CDATA[<p>一个全新的开始</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一个全新的开始</p>
+]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
