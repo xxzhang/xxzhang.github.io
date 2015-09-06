@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Keep recording]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-09-06T15:04:46.000Z</updated>
+  <updated>2015-09-06T15:06:11.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
     <title><![CDATA[什么是web框架]]></title>
     <link href="http://yoursite.com/2015/09/06/webframe/"/>
     <id>http://yoursite.com/2015/09/06/webframe/</id>
-    <published>2015-09-06T15:04:46.000Z</published>
-    <updated>2015-09-06T15:04:46.000Z</updated>
+    <published>2015-09-06T15:06:11.000Z</published>
+    <updated>2015-09-06T15:06:11.000Z</updated>
     <content type="html"><![CDATA[<p>Web 应用框架，或者简单的说是“Web 框架”，其实是建立 web 应用的一种方式。从简单的博客系统到复杂的富 AJAX 应用，web 上每个页面都是通过写代码来生成的。我发现很多人都热衷于学习 web 框架技术，例如 Flask 或这 Django 之类的，但是很多人并不理解什么是 web 框架，或者它们是如何工作的。这篇文章中，我将探索反复被忽略的 web 框架基础的话题。阅读完这篇文章，你应该首先对什么是 web 框架以及它们为什么会存在有更深的认识。这会让你学习一个新的 web 框架变得简单的多，还会让你在使用不同的框架的时候做个明知的选择。</p>
-<p><code>&lt;!--more--&gt;</code></p>
+<a id="more"></a>
 <h2 id="Web_如何工作的？">Web 如何工作的？</h2><p>在我们讨论框架之前，我们需要理解 Web 如何“工作”的。为此，我们将深入挖掘你在浏览器里输入一个 URL 按下 Enter 之后都发生了什么。在你的浏览器中打开一个新的标签，浏览<a href="http://www.jeffknupp.com" target="_blank" rel="external">http://www.jeffknupp.com</a> 。我们讨论为了显示这个页面，浏览器都做了什么事情（不关心 DNS 查询）。</p>
 <h3 id="Web_服务器">Web 服务器</h3><p>每个页面都以 HTML 的形式传送到你的浏览器中，HTML 是一种浏览器用来描述页面内容和结构的语言。那些负责发送 HTML 到浏览器的应用称之为“Web 服务器”，会让你迷惑的是，这些应用运行的机器通常也叫做 web 服务器。</p>
 <p>然而，最重要的是要理解，到最后所有的 web 应用要做的事情就是发送 HTML 到浏览器。不管应用的逻辑多么复杂，最终的结果总是将 HTML 发送到浏览器（我故意将应用可以响应像 JSON 或者 CSS 等不同类型的数据忽略掉，因为在概念上是相同的）。</p>
@@ -81,7 +81,8 @@ connection.<span class="keyword">close</span>()
 <p>但是最后要记住的是，Python web 框架都以相同的方式工作的：它们接收 HTTP 请求，分派代码，产生 HTML，创建带有内容的 HTTP 响应。事实上，所有主流的服务器端框架都以这种方式工作的（ JavaScript 框架除外）。但愿了解了这些框架的目的，你能够在不同的框架之间选择适合你应用的框架进行开发。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Web 应用框架，或者简单的说是“Web 框架”，其实是建立 web 应用的一种方式。从简单的博客系统到复杂的富 AJAX 应用，web 上每个页面都是通过写代码来生成的。我发现很多人都热衷于学习 web 框架技术，例如 Flask 或这 Django 之类的，但是很多人并]]>
+    <![CDATA[<p>Web 应用框架，或者简单的说是“Web 框架”，其实是建立 web 应用的一种方式。从简单的博客系统到复杂的富 AJAX 应用，web 上每个页面都是通过写代码来生成的。我发现很多人都热衷于学习 web 框架技术，例如 Flask 或这 Django 之类的，但是很多人并不理解什么是 web 框架，或者它们是如何工作的。这篇文章中，我将探索反复被忽略的 web 框架基础的话题。阅读完这篇文章，你应该首先对什么是 web 框架以及它们为什么会存在有更深的认识。这会让你学习一个新的 web 框架变得简单的多，还会让你在使用不同的框架的时候做个明知的选择。</p>]]>
+    
     </summary>
     
   </entry>
