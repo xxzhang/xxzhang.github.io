@@ -1,15 +1,21 @@
 <!doctype html>
-<html class="theme-next use-motion theme-next-mist">
-<head>
+
+
+
   
 
-<meta charset="UTF-8"/>
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
+
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
 
 
   <meta name="google-site-verification" content="7cbJq71WidTz6tnFAmrRlpMvTZ33gRMZoCFbAoOShAI" />
@@ -18,19 +24,28 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
 
 
 
 
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
 
 
-    <meta name="description" content="生命不息，折腾不止" />
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
 
 
-  <meta name="keywords" content="Hexo,next" />
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
 
 
 
@@ -38,7 +53,12 @@
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
 
 
 <meta name="description" content="Web 应用框架，或者简单的说是“Web 框架”，其实是建立 web 应用的一种方式。从简单的博客系统到复杂的富 AJAX 应用，web 上每个页面都是通过写代码来生成的。我发现很多人都热衷于学习 web 框架技术，例如 Flask 或这 Django 之类的，但是很多人并不理解什么是 web 框架，或者它们是如何工作的。这篇文章中，我将探索反复被忽略的 web 框架基础的话题。阅读完这篇文章，你">
@@ -53,10 +73,18 @@
 <meta name="twitter:description" content="Web 应用框架，或者简单的说是“Web 框架”，其实是建立 web 应用的一种方式。从简单的博客系统到复杂的富 AJAX 应用，web 上每个页面都是通过写代码来生成的。我发现很多人都热衷于学习 web 框架技术，例如 Flask 或这 Django 之类的，但是很多人并不理解什么是 web 框架，或者它们是如何工作的。这篇文章中，我将探索反复被忽略的 web 框架基础的话题。阅读完这篇文章，你">
 
 
+
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'post'
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -65,16 +93,9 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
+
+
 
   <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -88,20 +109,30 @@
 
 
 
-  <div class="container one-column page-post-detail">
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand" rel="start">
-      <span class="logo">
-        <i class="icon-next-logo"></i>
-      </span>
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
       <span class="site-title">zxx's blog</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Keep recording</p>
+</div>
 
 <div class="site-nav-toggle">
   <button>
@@ -120,7 +151,9 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
             首页
           </a>
         </li>
@@ -128,29 +161,35 @@
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
             归档
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            <i class="menu-item-icon icon-next-categories"></i> <br />
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            <i class="menu-item-icon icon-next-about"></i> <br />
-            关于
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
           </a>
         </li>
       
 
       
+      
+      
+        <li class="menu-item menu-item-search">
+          <a href="#" class="st-search-show-outputs">
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
     </ul>
   
@@ -158,11 +197,9 @@
   
     <div class="site-search">
       
-  
   <form class="site-search-form">
-    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-  </form>
-
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
 
 <script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
@@ -184,56 +221,77 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content"> 
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
 
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              什么是web框架
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-06T23:06:11+08:00" content="2015-09-06">
-            2015-09-06
-          </time>
-        </span>
+    
+      <header class="post-header">
 
         
-
         
-          
-            <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/09/06/webframe/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/06/webframe/" itemprop="commentsCount"></span>
-              </a>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                什么是web框架
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
             </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-09-06T23:06:11+08:00" content="2015-09-06">
+              2015-09-06
+            </time>
+          </span>
+
           
-        
-      </div>
-    </header>
 
-    <div class="post-body">
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/09/06/webframe/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/06/webframe/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><p>Web 应用框架，或者简单的说是“Web 框架”，其实是建立 web 应用的一种方式。从简单的博客系统到复杂的富 AJAX 应用，web 上每个页面都是通过写代码来生成的。我发现很多人都热衷于学习 web 框架技术，例如 Flask 或这 Django 之类的，但是很多人并不理解什么是 web 框架，或者它们是如何工作的。这篇文章中，我将探索反复被忽略的 web 框架基础的话题。阅读完这篇文章，你应该首先对什么是 web 框架以及它们为什么会存在有更深的认识。这会让你学习一个新的 web 框架变得简单的多，还会让你在使用不同的框架的时候做个明知的选择。</p>
+        <p>Web 应用框架，或者简单的说是“Web 框架”，其实是建立 web 应用的一种方式。从简单的博客系统到复杂的富 AJAX 应用，web 上每个页面都是通过写代码来生成的。我发现很多人都热衷于学习 web 框架技术，例如 Flask 或这 Django 之类的，但是很多人并不理解什么是 web 框架，或者它们是如何工作的。这篇文章中，我将探索反复被忽略的 web 框架基础的话题。阅读完这篇文章，你应该首先对什么是 web 框架以及它们为什么会存在有更深的认识。这会让你学习一个新的 web 框架变得简单的多，还会让你在使用不同的框架的时候做个明知的选择。</p>
 <a id="more"></a>
 <h2 id="Web_如何工作的？">Web 如何工作的？</h2><p>在我们讨论框架之前，我们需要理解 Web 如何“工作”的。为此，我们将深入挖掘你在浏览器里输入一个 URL 按下 Enter 之后都发生了什么。在你的浏览器中打开一个新的标签，浏览<a href="http://www.jeffknupp.com" target="_blank" rel="external">http://www.jeffknupp.com</a> 。我们讨论为了显示这个页面，浏览器都做了什么事情（不关心 DNS 查询）。</p>
 <h3 id="Web_服务器">Web 服务器</h3><p>每个页面都以 HTML 的形式传送到你的浏览器中，HTML 是一种浏览器用来描述页面内容和结构的语言。那些负责发送 HTML 到浏览器的应用称之为“Web 服务器”，会让你迷惑的是，这些应用运行的机器通常也叫做 web 服务器。</p>
@@ -292,7 +350,7 @@ connection.<span class="keyword">close</span>()
 <p>内嵌 ORM 让 Django 有能力创建一个功能丰富的 CRUD 应用，从服务器端角度来看，CRUD（CreateRead Update Delete）应用非常适合使用 web 框架技术。Django 和 Flask-SQLchemy 可以直接对每个 model 进行不同的 CRUD 操作。</p>
 <h2 id="再谈_web_框架">再谈 web 框架</h2><p>到现在为止，web 框架的目的应该非常清晰了：向程序员隐藏了处理 HTTP 请求和响应相关的基础代码。至于隐藏多少这取决于不同的框架，Django 和 Flask 走向了两个极端：Django 包括了每种情形，几乎成了它致命的一点；Flask 立足于“微框架”，仅仅实现 web 应用需要的最小功能，其它的不常用的 web 框架任务交由第三方库来完成。</p>
 <p>但是最后要记住的是，Python web 框架都以相同的方式工作的：它们接收 HTTP 请求，分派代码，产生 HTML，创建带有内容的 HTTP 响应。事实上，所有主流的服务器端框架都以这种方式工作的（ JavaScript 框架除外）。但愿了解了这些框架的目的，你能够在不同的框架之间选择适合你应用的框架进行开发。</p>
-</span>
+
       
     </div>
 
@@ -301,13 +359,15 @@ connection.<span class="keyword">close</span>()
 
       
         <div class="post-nav">
-          <div class="post-nav-prev post-nav-item">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/09/02/start/" rel="next" title="A fresh start">
+                <i class="fa fa-chevron-left"></i> A fresh start
+              </a>
             
           </div>
 
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2015/09/02/start/" rel="next">A fresh start</a>
+          <div class="post-nav-prev post-nav-item">
             
           </div>
         </div>
@@ -325,26 +385,27 @@ connection.<span class="keyword">close</span>()
     </div>
   </div>
 
- </div>
 
-        
-            <!-- 多说热评文章-->
-            <p>热评文章</p>
-            <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
-        
-
-        
-          <div class="comments" id="comments">
-            
-              <div class="ds-thread" data-thread-key="2015/09/06/webframe/"
-                   data-title="什么是web框架" data-url="http://yoursite.com/2015/09/06/webframe/">
-              </div>
-            
           </div>
-        
-      </div>
+          
 
-      
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/09/06/webframe/"
+           data-title="什么是web框架" data-url="http://yoursite.com/2015/09/06/webframe/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -358,6 +419,8 @@ connection.<span class="keyword">close</span>()
     <div class="sidebar-inner">
 
       
+
+      
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
             文章目录
@@ -368,12 +431,14 @@ connection.<span class="keyword">close</span>()
         </ul>
       
 
-      <section class="site-overview">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/avatar.jpg" alt="ZhangXiaoxu" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="ZhangXiaoxu" />
           <p class="site-author-name" itemprop="name">ZhangXiaoxu</p>
+          <p class="site-description motion-element" itemprop="description">生命不息，折腾不止</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">生命不息，折腾不止</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -381,27 +446,17 @@ connection.<span class="keyword">close</span>()
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
+          
+          
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">分类</span>
-              </a>
-          </div>
-
-          <div class="site-state-item site-state-tags">
-            
-              <span class="site-state-item-count">0</span>
-              <span class="site-state-item-name">标签</span>
-              
-          </div>
+          
 
         </nav>
 
         
           <div class="feed-link motion-element">
             <a href="/atom.xml" rel="alternate">
-              <i class="menu-item-icon icon-next-feed"></i>
+              <i class="fa fa-rss"></i>
               RSS
             </a>
           </div>
@@ -411,15 +466,27 @@ connection.<span class="keyword">close</span>()
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/xxzhang" target="_blank">GitHub</a>
+                <a href="https://github.com/xxzhang" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://weibo.com/zhangxiaoxu1218" target="_blank">Weibo</a>
+                <a href="http://weibo.com/zhangxiaoxu1218" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://www.zhihu.com/people/zhangxiaoxu" target="_blank">ZhiHu</a>
+                <a href="http://www.zhihu.com/people/zhangxiaoxu" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> ZhiHu
+                  
+                </a>
               </span>
             
           
@@ -439,7 +506,7 @@ connection.<span class="keyword">close</span>()
             <p class="site-author-name">友情链接</p>
             
               <span class="links-of-author-item">
-              <a href="http://evilcos.me/" target="_blank">evilcos</a>
+                <a href="http://evilcos.me/" target="_blank">evilcos</a>
               </span>
             
           
@@ -448,15 +515,21 @@ connection.<span class="keyword">close</span>()
       </section>
 
       
-        <section class="post-toc-wrap sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator"></div>
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
           <div class="post-toc">
+            
+              
             
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Web_如何工作的？"><span class="nav-number">1.</span> <span class="nav-text">Web 如何工作的？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Web_服务器"><span class="nav-number">1.1.</span> <span class="nav-text">Web 服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP"><span class="nav-number">1.2.</span> <span class="nav-text">HTTP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP_Methods"><span class="nav-number">1.3.</span> <span class="nav-text">HTTP Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#HTTP_GET"><span class="nav-number">1.3.1.</span> <span class="nav-text">HTTP GET</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTTP_POST"><span class="nav-number">1.3.2.</span> <span class="nav-text">HTTP POST</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTTTP_Response_Codes"><span class="nav-number">1.3.3.</span> <span class="nav-text">HTTTP Response Codes</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web_应用"><span class="nav-number">2.</span> <span class="nav-text">Web 应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web_服务器之殇"><span class="nav-number">3.</span> <span class="nav-text">Web 服务器之殇</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决两大问题：路由和模板"><span class="nav-number">4.</span> <span class="nav-text">解决两大问题：路由和模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Django_中的_MVC"><span class="nav-number">5.</span> <span class="nav-text">Django 中的 MVC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Django_中的路由"><span class="nav-number">6.</span> <span class="nav-text">Django 中的路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flask_中的路由"><span class="nav-number">7.</span> <span class="nav-text">Flask 中的路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通过_Templates_产生_HTML"><span class="nav-number">8.</span> <span class="nav-text">通过 Templates 产生 HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库交互"><span class="nav-number">9.</span> <span class="nav-text">数据库交互</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#再谈_web_框架"><span class="nav-number">10.</span> <span class="nav-text">再谈 web 框架</span></a></li></ol></div>
             
           </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
         </section>
       
 
@@ -464,15 +537,18 @@ connection.<span class="keyword">close</span>()
   </aside>
 
 
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
+      <div class="footer-inner">
+        <div class="copyright" >
   
-  &copy; &nbsp; 
-  <span itemprop="copyrightYear">2015</span>
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">ZhangXiaoxu</span>
 </div>
@@ -484,70 +560,53 @@ connection.<span class="keyword">close</span>()
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Muse
   </a>
 </div>
 
 
- </div>
+
+      </div>
     </footer>
 
     <div class="back-to-top"></div>
   </div>
 
+  
+
+
+  
+
+
+
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
-  
-    
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"zhangxiaoxu"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-    
-     
-  	<script src="/js/ua-parser.min.js"></script>
-  	<script src="/js/hook-duoshuo.js"></script>
-  
-
-    
-  
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
-  
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
-
-
-
-
-  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.1" id="bootstrap.scrollspy.custom"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -627,7 +686,7 @@ connection.<span class="keyword">close</span>()
 
     function tocOverflowIndicator (indicator, action) {
       var $indicator = $(indicator);
-      var opacity = action === 'show' ? 0.4 : 0;
+      var opacity = action === 'show' ? 1 : 0;
       $indicator.velocity ?
         $indicator.velocity('stop').velocity({
           opacity: opacity
@@ -681,7 +740,7 @@ connection.<span class="keyword">close</span>()
 
     $('.post-toc a').on('click', function (e) {
       e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
       var offset = $(targetSelector).offset().top;
       hasVelocity ?
         html.velocity('stop').velocity('scroll', {
@@ -694,42 +753,60 @@ connection.<span class="keyword">close</span>()
     });
 
     // Expand sidebar on post detail page by default, when post has a toc.
-    var $tocContent = $('.post-toc-content');
-    if (isDesktop() && CONFIG.sidebar === 'post') {
-      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-        displaySidebar();
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
       }
-    }
+    };
   });
 </script>
 
 
 
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
   <script type="text/javascript">
-    $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
-      }
-      if (isMobile()) {
-        FastClick.attach(document.body);
-      }
-    });
+    var duoshuoQuery = {short_name:"zhangxiaoxu"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
   </script>
 
   
+    
+  
+
+
+
+
 
   
   
 
   
-  <script type="text/javascript" src="/js/lazyload.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#posts").find('img').lazyload({
-        placeholder: "/images/loading.gif",
-        effect: "fadeIn"
-      });
-    });
-  </script>
+  
+
+
 </body>
 </html>
